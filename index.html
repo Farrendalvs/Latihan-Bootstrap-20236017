@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Latihan Bootstrap</title>
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light Headerbg fixed-top">
+    <img class="logoku" src="assets/image/DB.jpg">
+
+    <a class="navbar-brand" href="#home" style="font-weight: bold;">
+        DAPOERBARRU
+    </a>
+
+    <!-- HAMBURGER MENU -->
+    <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" 
+            data-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu Category</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+        
+        <!-- CARAOUSEL -->
+        <section id="home">
+        <div class="section-background">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/image/11.jpg" class="d-block w-100" alt="Slide 1">
+                <div class="carousel-caption">
+                    <h5 style="font-size: 30px; font-weight: bold;">HELLO, WELCOME!</h5>
+                    <p>-Sweet Foods For a Good Mood-</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <img src="assets/image/slide 7.jpg" class="d-block w-100" alt="Slide 2">
+                <div class="carousel-caption">
+                    <h5 style="font-size: 30px; font-weight: bold;">PROFESSIONAL BAKER</h5>
+                    <p>-Definitely Won't Disappoint-</p>
+                </div>
+                </div>
+
+                <div class="carousel-item">
+                <img src="assets/image/1111.jpg" class="d-block w-100" alt="Slide 3">
+                <div class="carousel-caption">
+                    <h5 style="font-size: 30px; font-weight: bold;">FULL OF CREATIVITY</h5>
+                    <p>-Any Custom is Possible-</p>
+                </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </section>
+
+        <!-- ABOUT US -->
+        <section id="about">
+            <h2 class="text-center" style="font-weight: bold;">About Us</h2>
+
+            <div class="about-container">
+                
+                <img src="assets/image/store.jpg" alt="About Image" class="about-img">
+
+                <div class="about-text">
+                    <h3 style="font-weight: bold;">Hi, this is <br>DAPOERBARRU!</h3><br>
+                    This business has been established since 2019.<br>
+                    Focusing on making cookies, cakes, croissants, and various types of pastries.<br>
+                    Its main focus is on flavor, authentic texture,
+                    and the aesthetic appearance of cakes that are pleasing to the eye.
+                </div>
+
+                <div class="chart-box">
+                    <canvas id="aboutChart"></canvas>
+                </div>
+
+            </div>
+        </section>
+
+
+    
+        <!-- MENU -->
+        <section id="menu">
+            <div class="about-section">
+                <h2 class="text-category" style="font-weight: bold;">Menu Category</h2>
+
+            <div class="card-wrapper">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/cake.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Cakes</h5>
+                        <p class="card-text">A special cake creation with a soft taste and charming decoration perfect for every special moment.</p>
+                        <a href="#" class="btn btn-primary">Check >></a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/croisant.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Pastry</h5>
+                        <p class="card-text">Soft, buttery pastry with a crispy crust that makes every bite feel special.</p>
+                        <a href="#" class="btn btn-primary">Check >></a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/brownies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Brownies</h5>
+                        <p class="card-text">fudgy, rich, and full of little chocolate chunks that put you in a good mood</p>
+                        <a href="#" class="btn btn-primary">Check >></a>
+                    </div>
+                </div>
+                
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/cookies.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Cookies</h5>
+                        <p class="card-text">Crispy and savory with an aroma that will make you fall in love from the first bite.</p>
+                        <a href="#" class="btn btn-primary">Check >></a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="assets/image/sdg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" style="font-weight: bold;">Bread</h5>
+                        <p class="card-text">Artisan breads and savory pastries that are warm, fragrant, and full of character and simple pleasures.</p>
+                        <a href="#" class="btn btn-primary">Check >></a>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        </section>
+        </section> 
+
+        <!-- CONTACT -->
+        <section id="contact">
+        <div class="contact-section">
+                <h2 class="text-contact" style="font-weight: bold;">Contact</h2>
+            <div class="maps-container" style="width: 100%; max-width: 800px; margin: auto;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d506199.253932775!2d110.39704151039872!3d-7.609576313825267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a17c90aebc5e3%3A0x4a0de6c6f1589e9a!2sDAPOERBARRU!5e0!3m2!1sen!2sid!4v1763655978590!5m2!1sen!2sid"
+                    width="100%" 
+                    height="400" 
+                    padding-top="50px"
+                    style="border:0; border-radius: 15px;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+                <h4 style="padding: 10px; font-weight: bold;">Our Shop Address:</h4>
+                <p>Jl. Rajawali Raya No.31, Nilagraha, Gonilan, Kec. Kartasura,<br>Kabupaten Sukoharjo, Jawa Tengah 57169</p>
+                <h4 style="padding: 20px; font-weight: bold;">Operational Schedule:</h4>
+
+                    <div class="schedule">
+                        <div class="row" style="font-weight: bold;"><span>Sunday</span><span>10:00 - 21:00</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Monday</span><span>10:00 - 21:00</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Tuesday</span><span>Close</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Wednesday</span><span>10:00 - 21:00</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Thursday</span><span>10:00 - 21:00</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Friday</span><span>10:00 - 21:00</span></div>
+                        <div class="row" style="font-weight: bold;"><span>Saturday</span><span>10.00 - 17:00</span></div>
+                    </div>
+            </div>
+        </div>
+        </section>
+
+        <div class="kirimpesan">
+            <h2 class="textkirim" style="font-weight: bold;">Let's Send Anything</h2>
+            <div class="form-wrapper">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <h3 class="brand">- DAPOERBARRU -</h3>
+
+            <div class="contact">
+                <p><i class="bi bi-telephone-fill"></i> +62 882-0058-24217 <br>
+                <i class="bi bi-envelope-fill"></i> dapoerbarru@gmail.com <br>
+                <i class="bi bi-instagram"></i> @dapoerbarru</p>
+
+                    <div style="margin-top: 20px; margin-bottom: 20px; font-size: 0.9em;">
+                        &copy; Copyright 2020 DAPOERBARRU
+                    </div>
+            </div>
+        </footer>
+
+        <script>
+            // aktifkan menu saat diklik
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    navLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+        </script>
+
+        <script>
+            $(document).ready(function () {
+
+                // Detect scroll
+                $(window).on("scroll", function () {
+                    let scrollPos = $(window).scrollTop();
+
+                    // Loop semua section
+                    $("section").each(function () {
+                        let sectionTop = $(this).offset().top - 80; // jarak navbar
+                        let sectionBottom = sectionTop + $(this).outerHeight();
+
+                        // Cek apakah posisi scroll ada pada section
+                        if (scrollPos >= sectionTop && scrollPos < sectionBottom) {
+                            let id = $(this).attr("id");
+
+                            // Hapus active dari semua menu
+                            $(".nav-link").removeClass("active");
+
+                            // Kasih active pada menu yang sesuai
+                            $('.nav-link[href="#' + id + '"]').addClass("active");
+                        }
+                    });
+                });
+
+            });
+        </script>
+
+        <!-- Script ChartJS (link CDN) -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <!-- Script Grafik -->
+        <script>
+        const ctx = document.getElementById('aboutChart').getContext('2d');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['2019', '2020', '2021', '2022', '2023', '2024', '2025'],
+                datasets: [{
+                    label: 'Data Penjualan',
+                    data: [90, 80, 80, 70, 60, 50, 90],
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+            }
+        });
+        </script>
+
+
+    </body>
+</html>                                                                                                                                                                                                          
